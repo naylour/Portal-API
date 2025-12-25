@@ -1,0 +1,273 @@
+  2025-12-25T13:09:09.695754Z ERROR api: Ошибка!
+    at src/main.rs:30
+
+  2025-12-25T13:10:29.342875Z  INFO api: Информационное сообщение
+    at src/main.rs:28
+
+  2025-12-25T13:10:29.342953Z  WARN api: Предупреждение
+    at src/main.rs:29
+
+  2025-12-25T13:10:29.343015Z ERROR api: Ошибка!
+    at src/main.rs:30
+
+  2025-12-25T13:12:19.935654Z  WARN api: Предупреждение
+    at src/main.rs:29
+
+  2025-12-25T13:12:19.935886Z ERROR api: Ошибка!
+    at src/main.rs:30
+
+  2025-12-25T13:12:34.534861Z  INFO api: Информационное сообщение
+    at src/main.rs:28
+
+  2025-12-25T13:12:34.534952Z  WARN api: Предупреждение
+    at src/main.rs:29
+
+  2025-12-25T13:12:34.535002Z ERROR api: Ошибка!
+    at src/main.rs:30
+
+  2025-12-25T15:24:19.720028Z ERROR api::routes::v1::threat::source::create_source: Ошибка создания источника: error returned from database: relation "thread_source" does not exist
+    at src/routes/v1/threat/source/create_source.rs:27
+
+  2025-12-25T15:24:57.759697Z ERROR api::routes::v1::threat::source::create_source: Ошибка создания источника: error returned from database: duplicate key value violates unique constraint "threat_source_name_key"
+    at src/routes/v1/threat/source/create_source.rs:27
+
+  2025-12-25T15:53:02.812036Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:54:01.134673Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:54:01.135277Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:54:01.135376Z  INFO api: Подключение к базе данных...
+    at src/main.rs:30
+
+  2025-12-25T15:54:01.180850Z  INFO api: Запуск сервера...
+    at src/main.rs:44
+
+  2025-12-25T15:57:14.357607Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:57:14.367620Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:57:14.367791Z DEBUG api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T15:57:14.367933Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T15:57:14.376298Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T15:58:21.353875Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:58:21.354076Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:58:21.354323Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T15:58:21.354399Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T15:58:21.363627Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T15:59:35.113309Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:59:35.113417Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:59:35.113510Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T15:59:35.113579Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T15:59:35.121791Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T15:59:38.037447Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:59:38.037541Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:59:38.037635Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T15:59:38.037733Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T15:59:38.046685Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T15:59:40.435977Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T15:59:40.436106Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T15:59:40.436248Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T15:59:40.436347Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T15:59:40.445101Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T19:59:13.625226Z  INFO api: Запуск приложения...
+    at src/main.rs:24
+
+  2025-12-25T19:59:13.626543Z  INFO api: Получение конфигурации...
+    at src/main.rs:28
+
+  2025-12-25T19:59:13.626742Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:30
+
+  2025-12-25T19:59:13.626822Z  INFO api: Подключение к базе данных...
+    at src/main.rs:32
+
+  2025-12-25T19:59:13.674592Z  INFO api: Запуск сервера...
+    at src/main.rs:46
+
+  2025-12-25T19:59:27.289390Z DEBUG sqlx::query: summary: "SELECT 1", db.statement: "", rows_affected: 1, rows_returned: 1, elapsed: 756.579µs, elapsed_secs: 0.000756579
+    at /home/naylour/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.6/src/logger.rs:143
+
+  2025-12-25T19:59:42.856303Z DEBUG sqlx::query: summary: "INSERT INTO threat_source (name, …", db.statement: "\n\n\n            INSERT INTO threat_source (name, url, file_url)\n            VALUES ($1, $2, $3)\n            RETURNING id, name, url, file_url, updated_at, created_at;\n        \n", rows_affected: 1, rows_returned: 1, elapsed: 6.563537ms, elapsed_secs: 0.006563537
+    at /home/naylour/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.6/src/logger.rs:143
+
+  2025-12-25T22:12:38.707111Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T22:12:38.707557Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T22:12:38.707646Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T22:12:38.707729Z  INFO api: Подключение к базе данных...
+    at src/main.rs:31
+
+  2025-12-25T22:12:38.755552Z  INFO api: Запуск сервера...
+    at src/main.rs:45
+
+  2025-12-25T22:17:58.709343Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T22:17:58.709838Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T22:17:58.709929Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T22:17:58.709993Z  INFO api: Подключение к базе данных...
+    at src/main.rs:31
+
+  2025-12-25T22:17:58.755666Z  INFO api: Запуск сервера...
+    at src/main.rs:43
+
+  2025-12-25T22:20:16.677140Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T22:20:16.677533Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T22:20:16.677624Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T22:20:16.677793Z  INFO database: Подключение к базе данных...
+    at database/src/lib.rs:7
+
+  2025-12-25T22:20:16.722754Z  INFO database: Подключение прошло успешно
+    at database/src/lib.rs:10
+
+  2025-12-25T22:20:16.724992Z  INFO api: Запуск сервера...
+    at src/main.rs:41
+

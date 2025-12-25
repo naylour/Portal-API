@@ -1,0 +1,12 @@
+networks:
+  shared:
+    name: shared_net
+
+services:
+  database:
+    ports:
+      - "${DATABASE_PORT}:5432"
+
+  agent:
+    ports:
+      - "${AGENT_PORT}:11434"

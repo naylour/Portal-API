@@ -1,0 +1,31 @@
+networks:
+    shared:
+        name: shared_net
+
+services:
+    database:
+        container_name: ${DATABASE_NAME}
+        image: postgres:18-alpine
+        restart: unless-stopped
+        networks: [shared]
+        environment:
+            POSTGRES_USER: ${DATABASE_USER}
+            POSTGRES_PASSWORD: ${DATABASE_PASSWORD}
+            POSTGRES_DB: ${DATABASE_NAME}
+        volumes:
+            - pgdata:/var/lib/postgresql/18/main
+
+    agent:
+        container_name: ai_agent
+        image: ollama/ollama:latest
+        restart: unless-stopped
+        networks: [shared]
+        volumes:
+            - agent:/root/.ollama
+        environment:
+            - OLLAMA_HOST=0.0.0.0
+            - CUDA_VISIBLE_DEVICES=${USE_GPU:-}
+
+volumes:
+    agent:
+    pgdata:
