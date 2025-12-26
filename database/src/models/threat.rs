@@ -1,3 +1,4 @@
+use super::threat_status::ThreatStatus;
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 use sqlx::FromRow;
@@ -8,6 +9,10 @@ use uuid::Uuid;
 pub struct Threat {
     #[schema(value_type = String, format = "uuid")]
     pub id: Uuid,
+
+    pub id_from_source: String,
+
+    pub link: Option<String>,
 
     pub title: String,
 
@@ -22,6 +27,16 @@ pub struct Threat {
 
     pub description: Option<String>,
 
+    pub status: ThreatStatus,
+
+    pub comment: Option<String>,
+
+    #[schema(value_type = String, format = "date-time")]
+    pub adding_in_source: Option<DateTime<Utc>>,
+
+    #[schema(value_type = String, format = "date-time")]
+    pub last_update_in_source: Option<DateTime<Utc>>,
+
     #[schema(value_type = String, format = "date-time")]
     pub updated_at: DateTime<Utc>,
 
@@ -29,4 +44,23 @@ pub struct Threat {
     pub created_at: DateTime<Utc>,
 }
 
-impl Threat {}
+#[derive(FromRow, Serialize, Deserialize, ToSchema, Debug)]
+pub struct ThreatCreateDTO {
+    pub title: String,
+
+    pub id_from_source: String,
+
+    pub link: Option<String>,
+
+    pub description: Option<String>,
+
+    pub status: ThreatStatus,
+
+    pub comment: Option<String>,
+
+    #[schema(value_type = String, format = "date-time")]
+    pub adding_in_source: Option<DateTime<Utc>>,
+
+    #[schema(value_type = String, format = "date-time")]
+    pub last_update_in_source: Option<DateTime<Utc>>,
+}

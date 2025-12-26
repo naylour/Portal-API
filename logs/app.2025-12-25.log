@@ -271,3 +271,93 @@
   2025-12-25T22:20:16.724992Z  INFO api: Запуск сервера...
     at src/main.rs:41
 
+  2025-12-25T23:03:35.261955Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T23:03:35.262360Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T23:03:35.262506Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T23:03:35.262596Z  INFO database::pool: Подключение к базе данных...
+    at database/src/pool.rs:5
+
+  2025-12-25T23:03:35.308657Z  INFO database::pool: Подключение прошло успешно
+    at database/src/pool.rs:9
+
+  2025-12-25T23:03:35.311361Z  INFO api: Запуск сервера...
+    at src/main.rs:41
+
+  2025-12-25T23:07:31.383275Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T23:07:31.383630Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T23:07:31.383743Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T23:07:31.383825Z  INFO database::pool: Подключение к базе данных...
+    at database/src/pool.rs:5
+
+  2025-12-25T23:07:31.427825Z  INFO database::pool: Подключение прошло успешно
+    at database/src/pool.rs:9
+
+  2025-12-25T23:07:31.431516Z  INFO api: Запуск сервера...
+    at src/main.rs:41
+
+  2025-12-25T23:08:23.780680Z DEBUG sqlx::query: summary: "INSERT INTO threat_source (name, …", db.statement: "\n\n\n            INSERT INTO threat_source (name, url, files_urls)\n            VALUES ($1, $2, $3)\n            RETURNING id, name, url, file_url, updated_at, created_at;\n        \n", rows_affected: 0, rows_returned: 0, elapsed: 1.512385ms, elapsed_secs: 0.001512385
+    at /home/naylour/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.6/src/logger.rs:143
+
+  2025-12-25T23:08:23.781003Z ERROR api::routes::v1::threat::source::create_source: Ошибка создания источника: error returned from database: column "file_url" does not exist
+    at src/routes/v1/threat/source/create_source.rs:27
+
+  2025-12-25T23:08:42.271626Z  INFO api: Запуск приложения...
+    at src/main.rs:23
+
+  2025-12-25T23:08:42.272119Z  INFO api: Получение конфигурации...
+    at src/main.rs:27
+
+  2025-12-25T23:08:42.272216Z  INFO api: Config {
+    database: DatabaseConfig {
+        name: "SDQ_DATABASE",
+        port: "51001",
+        user: "SDQ_USER",
+        password: "019b4cf6-33e8-7a71-a9e7-20195582df8d",
+        url: "postgres://SDQ_USER:019b4cf6-33e8-7a71-a9e7-20195582df8d@localhost:51001/SDQ_DATABASE",
+    },
+    api_port: "50000",
+}
+    at src/main.rs:29
+
+  2025-12-25T23:08:42.272303Z  INFO database::pool: Подключение к базе данных...
+    at database/src/pool.rs:5
+
+  2025-12-25T23:08:42.316296Z  INFO database::pool: Подключение прошло успешно
+    at database/src/pool.rs:9
+
+  2025-12-25T23:08:42.319966Z  INFO api: Запуск сервера...
+    at src/main.rs:41
+
+  2025-12-25T23:09:00.471300Z DEBUG sqlx::query: summary: "INSERT INTO threat_source (name, …", db.statement: "\n\n\n            INSERT INTO threat_source (name, url, files_urls)\n            VALUES ($1, $2, $3)\n            RETURNING id, name, url, files_urls, updated_at, created_at;\n        \n", rows_affected: 1, rows_returned: 1, elapsed: 4.559488ms, elapsed_secs: 0.004559488
+    at /home/naylour/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sqlx-core-0.8.6/src/logger.rs:143
+

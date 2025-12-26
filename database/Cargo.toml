@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 sqlx = { version = "0.8", features = ["postgres", "runtime-tokio-rustls", "macros", "uuid", "chrono"] }
+# sqlx-enum = "0.2"
 uuid = { version = "1", features = ["v7", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
 utoipa = { version = "5" }
